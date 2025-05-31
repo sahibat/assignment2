@@ -9,15 +9,15 @@ util.inherits(FileManager, EventEmitter);
 const fileManager = new FileManager();
 
 fileManager.on('fileCreated', (filename) => {
-    console.log(`🎉 File created: ${filename}`);
+    console.log(`File created: ${filename}`);
 });
 
 fileManager.on('fileRead', (filename) => {
-    console.log(`📖 File read: ${filename}`);
+    console.log(`File read: ${filename}`);
 });
 
 fileManager.on('fileDeleted', (filename) => {
-    console.log(`🗑 File deleted: ${filename}`);
+    console.log(`File deleted: ${filename}`);
 });
 
 module.exports = fileManager;
